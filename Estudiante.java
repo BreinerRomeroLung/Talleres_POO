@@ -5,8 +5,8 @@ public class Estudiante {
 
     public Estudiante(){
         this.Nombre="Nombre";
-        this.Edad=0;
-        this.Curso=1;
+        this.Edad=7;
+        this.Curso=3;
 
     }
     public Estudiante(String Nombre,int Edad){

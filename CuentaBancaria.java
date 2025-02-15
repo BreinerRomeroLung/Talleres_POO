@@ -4,7 +4,7 @@ public class CuentaBancaria {
     String TipoCuenta;
 
     public CuentaBancaria(){
-        NumeroCuenta = 23232;
+        NumeroCuenta = 0102 1313;
         Saldo =0;
         TipoCuenta="Desconocido";
 

@@ -1,0 +1,47 @@
+public class Empleado_1 {
+    public Empleado_1(String Nombre,double salario){
+        this.Nombre=Nombre;
+        this.salario=salario;
+    
+    
+    }
+
+    public class Main {
+        public static void main(String[] args) {
+            
+            Empleado empleado_1 = new Empleado_1("Breiner Romero", 7500.00);
+            
+            
+            empleado_1.mostrarInformacion();
+        }
+
+}
+    class Gerente extends Empleado_1 {
+        protected String departamento;
+    
+        public Gerente(String nombre, double salario, String departamento) {
+            super(nombre, salario); 
+            this.departamento = departamento;
+        }
+    
+      
+        public void mostrarInformacion() {
+             super.mostrarInformacion(); 
+            System.out.println("Departamento: " + departamento);
+        }
+    }
+
+    public static void main(String[] args) {
+        final Empleado gerente = new Empleado("Breiner", 6500.00);
+        final Empleado  Gerente = new Empleado("Breiner", 6500.00);
+        gerente.mostrarInformacion(); 
+    }
+    protected String Nombre;
+    protected double salario;
+
+
+    public void mostrarInformacion() {
+        System.out.println("Nombre: " + Nombre);
+        System.out.println("Salario: " + salario);
+    }
+}

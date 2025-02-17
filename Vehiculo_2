@@ -1,0 +1,40 @@
+public class Vehiculo_2 {
+    protected String tipo;
+    protected String marca;
+
+    public Vehiculo_2(String tipo, String marca) {
+        this.tipo = tipo;
+        this.marca = marca;
+    }
+
+    public void mostrarInfo() {
+        System.out.println("Tipo: " + tipo);
+        System.out.println("Marca: " + marca);
+    }
+}
+
+
+class Moto extends Vehiculo_2 {
+    
+    private int cilindrada;
+
+    
+    public Moto(String tipo, String marca, int cilindrada) {
+        super(tipo, marca); 
+        this.cilindrada = cilindrada;
+    }
+
+    
+    public void mostrarDetallesMoto() {
+        mostrarDetalles(); 
+        System.out.println("Cilindrada: " + cilindrada);
+    }
+    public class Prueba {
+        
+        public static void main(String[] args) {
+            Moto miMoto = new Moto("Deportiva", "Kawasaki", 600);
+            miMoto.mostrarDetallesMoto();
+            
+        }
+    }
+}

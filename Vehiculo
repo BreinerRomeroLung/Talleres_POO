@@ -5,7 +5,7 @@ public class Vehiculo {
 
     }
 class Bicicleta extends Vehiculo{
-    @Override
+   
     public void Moverse() {
         System.out.println("La bicicleta se está moviendo (pedaleando).");
     }

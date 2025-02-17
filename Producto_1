@@ -1,0 +1,29 @@
+public class Producto_1 {
+   String Nombre;
+   double  Precio;
+   int stock;
+
+   Producto_1(String Nombre,double Precio,int stock){
+    this.Nombre=Nombre;
+    this.Precio=Precio;
+
+   }
+   void MostrarDetalles(){
+    
+   }
+   public static void main(String[] args) {
+    Producto producto = new Producto("Breiner",2000,19);
+     System.out.println("Nombre :"+producto.Nombre);
+     System.out.println("Precio :"+producto.Precio);
+     System.out.println("stock :"+producto.stock);
+
+     producto.MostrarDetalles();
+
+
+   }
+
+   
+
+
+    
+}

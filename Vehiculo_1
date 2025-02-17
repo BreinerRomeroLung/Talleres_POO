@@ -1,0 +1,26 @@
+public class Vehiculo_1 {
+    String Tipo;
+
+    Vehiculo(String Tipo){
+        this.Tipo=Tipo;
+
+    }
+
+public class moto extends Vehiculo_1{
+    int Cilindraje;
+    moto(String Tipo,int Cilindraje){
+        super(Tipo);
+        this.Cilindraje=Cilindraje;
+   
+    }
+
+}    
+
+
+public class prueba{
+  public static void main(String[] args) {
+   
+  }
+
+}
+}

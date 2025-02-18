@@ -1,0 +1,25 @@
+public class Carro_1 {
+    String marca;
+    String modelo;
+    static int contadorCarros = 0;
+
+    public Carro_1(String marca, String modelo) {
+        this.marca = marca;
+        this.modelo = modelo;
+        contadorCarros++;
+    }
+
+    public static int getContadorCarros() {
+        return contadorCarros;
+    }
+}
+
+class Prueba10 {
+    public static void main(String[] args) {
+        Carro_1 c1 = new Carro_1("Toyota", "Corolla");
+        Carro_1 c2 = new Carro_1("Chevrolet", "Tahoe");
+        Carro_1 c3 = new Carro_1("Ford", "Raptor");
+
+        System.out.println("Número total de carros   creados: " + Carro.getContadorCarros());
+    }
+}
